@@ -26,16 +26,18 @@ void printArray(int numbers[], int index) {
    }
 }
 
+
 void checkFifthBit(int number) {
+    int numberToModify = number;
     int bitNumber[32];
     int index = 0;
 
-    while(number > 0) {
-        bitNumber[index] = number % 2;
-        number /= 2;
+    while(numberToModify > 0) {
+        bitNumber[index] = numberToModify % 2;
+        numberToModify /= 2;
         index++;
     }
-    printf("Initial number in binary is \n");
+    printf("Initial number in binary is %d \n", number);
     printArray(bitNumber, index);
     printf("\n");
 
@@ -46,12 +48,14 @@ void checkFifthBit(int number) {
             printArray(bitNumber, index);
             printf("\n");
         } else {
-            printf("%d \n", number);
+            printf(" this is the number %d \n", number);
         }
     } else {
         printf("The number has no 5th bit \n");
     }
 }
+
+
 
 
 int isYearEndOfCentury(int year) {
