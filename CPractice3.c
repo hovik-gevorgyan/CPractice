@@ -44,11 +44,11 @@ void checkFifthBit(int number) {
     if(index >= 4) {
         if(bitNumber[4] == 0) {
             bitNumber[4] = 1;
-            printf("The binary number after modification is \n");
+            printf("The binary number after modification is  %d \n", number + 32);
             printArray(bitNumber, index);
             printf("\n");
         } else {
-            printf(" this is the number %d \n", number);
+            printf("This is the number %d \n", number);
         }
     } else {
         printf("The number has no 5th bit \n");
