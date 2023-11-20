@@ -1,6 +1,6 @@
 #include <iostream>
 
-// funcito pointer type
+// function pointer type
 int(*ff)(int,int);
 
 
